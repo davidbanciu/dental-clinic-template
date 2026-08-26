@@ -1,5 +1,4 @@
-import { Hero, WhyChooseUs } from "./components"
-import { MarketingApproach } from "./components"
+import { FeaturedArticle, Hero, MarketingApproach, WhyChooseUs } from "./components";
 
 export const HomeScreen = () => {
   return (
@@ -7,6 +6,7 @@ export const HomeScreen = () => {
       <Hero />
       <WhyChooseUs />
       <MarketingApproach />
+      <FeaturedArticle />
     </>
   )
 }
