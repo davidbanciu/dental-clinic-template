@@ -1,4 +1,4 @@
-import { Hero, WhyChooseUs } from "../../components"
+import { Hero, WhyChooseUs } from "./components"
 
 export const HomeScreen = () => {
   return (
