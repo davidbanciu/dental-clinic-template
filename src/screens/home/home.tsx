@@ -1,5 +1,5 @@
 import { Hero, WhyChooseUs } from "./components"
-import { MarketingApproach } from "./components/marketing-approach/marketing-approach"
+import { MarketingApproach } from "./components"
 
 export const HomeScreen = () => {
   return (

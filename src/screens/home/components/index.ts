@@ -1,3 +1,3 @@
 export * from './hero';
 export * from './why-choose-us';
-export * from './marketing-approach';
+export * from './marketing-approach'
