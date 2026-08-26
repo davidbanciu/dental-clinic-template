@@ -1,5 +1,5 @@
 import { Header } from "./header";
-import agency_hero from "../../images/agency_hero.jpg";
+import agency_hero from "../../../../images/agency_hero.jpg";
 
 export const Hero = () => {
   return (
