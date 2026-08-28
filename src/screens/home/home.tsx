@@ -1,13 +1,13 @@
-import { FeaturedArticle, Footer, Hero, MarketingApproach, WhyChooseUs } from "./components";
+import { AppLayout } from "../../navigation";
+import { FeaturedArticle, Hero, MarketingApproach, WhyChooseUs } from "./components";
 
 export const HomeScreen = () => {
   return (
-    <>
+    <AppLayout>
       <Hero />
       <WhyChooseUs />
       <MarketingApproach />
       <FeaturedArticle />
-      <Footer />
-    </>
-  )
-}
+    </AppLayout>
+  );
+};
