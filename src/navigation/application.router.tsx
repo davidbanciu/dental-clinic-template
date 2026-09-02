@@ -2,6 +2,7 @@ import { Suspense, useMemo } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { useScrollToTopHandler } from './hooks';
 import { HomeScreen } from '../screens';
+import { ContactScreen } from '../screens/contact';
 
 export const ApplicationRouter = () => {
   useScrollToTopHandler()
@@ -13,7 +14,7 @@ export const ApplicationRouter = () => {
       <Routes location={state?.backgroundLocation || location}>
         <Route index element={<HomeScreen />} />
 
-        <Route path={'/test'} element={<>Testing routes</>}/>
+        <Route path={'/contact'} element={<ContactScreen />}/>
       </Routes>
     </Suspense>
   )

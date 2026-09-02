@@ -1,5 +1,5 @@
 import { MapPin, Phone } from "lucide-react";
-import { SocialIcons } from "./social-icons";
+import { SocialIcons } from "../../../../components/social-icons";
 
 export const MediaAddress = () => {
   return (

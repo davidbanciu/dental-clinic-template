@@ -4,7 +4,7 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
-import { SocialIcons } from "../hero/social-icons";
+import { SocialIcons } from "./social-icons";
 
 export const Footer = () => {
   return (
