@@ -33,19 +33,10 @@ export const MobileMenu = ({ isOpen }: Props) => {
 
           <li className="md:ml-4">
             <Link
-              to="/marketing"
+              to="/services"
               className="inline-block py-2 font-semibold hover:underline md:px-2 md:text-white"
             >
-              Marketing
-            </Link>
-          </li>
-
-          <li className="md:ml-4">
-            <Link
-              to="/blog"
-              className="inline-block py-2 font-semibold hover:underline md:px-2 md:text-white"
-            >
-              Blog
+              Services
             </Link>
           </li>
 

@@ -12,9 +12,32 @@ export const ApplicationRouter = () => {
   return (
     <Suspense fallback={<></>} >
       <Routes location={state?.backgroundLocation || location}>
+
         <Route index element={<HomeScreen />} />
 
+        {/* Starter */}
         <Route path={'/contact'} element={<ContactScreen />}/>
+        <Route path={'/about'} element={<>About Us Screen</>}/>
+        <Route path={'/services'} element={<>Services Screen</>}/>
+        <Route path={'/pricing'} element={<>Pricing Screen</>}/>
+        <Route path={'/privacy_policy'} element={<>Privacy Policy Screen</>}/>
+
+        {/* Professional */}
+        {/* Testimonials.
+        Before & After gallery.
+        FAQ.
+        Google Maps.
+        Opening hours.
+        Appointment CTA everywhere. */}
+
+
+        {/* Growth */}
+        {/* Blog.
+        Individual treatment pages.
+        SEO optimization.
+        Google Reviews integration.
+        Analytics.
+        Monthly content. */}
       </Routes>
     </Suspense>
   )

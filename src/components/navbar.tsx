@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+
 import { MobileMenu } from "./mobile-menu";
 
 type Props = {
@@ -14,69 +16,63 @@ export const Navbar = ({ dark = false }: Props) => {
   };
 
   const textColor = dark ? "text-slate-900" : "text-white";
+
   const buttonBorder = dark
     ? "border-slate-300 hover:bg-slate-900 hover:text-white"
-    : "border-white hover:bg-white hover:text-sky-600";
+    : "border-white hover:bg-white hover:text-black";
 
   return (
     <>
       {/* Desktop Navbar */}
       <nav className="hidden h-20 items-center justify-between lg:flex">
         {/* Logo */}
-        <a
-          href="/"
+        <Link
+          to="/"
           className={`text-2xl font-bold tracking-tight ${textColor}`}
         >
           Dentist Marketing
-        </a>
+        </Link>
 
         {/* Navigation Links */}
         <div className="flex items-center gap-8">
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
             About Us
-          </a>
+          </Link>
 
-          <a
-            href="#pricing"
+          <Link
+            to="/pricing"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
             Pricing
-          </a>
+          </Link>
 
-          <a
-            href="#marketing"
+          <Link
+            to="/services"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
-            Marketing
-          </a>
+            Services
+          </Link>
 
-          <a
-            href="#blog"
-            className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
-          >
-            Blog
-          </a>
-
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className={`rounded border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${textColor} ${buttonBorder}`}
           >
             Contact Us
-          </a>
+          </Link>
         </div>
       </nav>
 
       {/* Mobile Navbar */}
       <nav className="flex h-20 items-center justify-between lg:hidden">
-        <a
-          href="/"
+        <Link
+          to="/"
           className={`text-2xl font-bold tracking-tight ${textColor}`}
         >
           Dentist Marketing
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -95,4 +91,4 @@ export const Navbar = ({ dark = false }: Props) => {
       <MobileMenu isOpen={isOpen} />
     </>
   );
-}
+};
