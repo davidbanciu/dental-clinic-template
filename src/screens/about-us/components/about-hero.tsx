@@ -1,0 +1,40 @@
+import { Navbar } from "../../../components/navbar";
+
+export const AboutHero = () => {
+  return (
+    <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-400">
+      {/* Navbar */}
+      <div className="mx-auto max-w-[1200px] px-6 lg:px-16">
+        <Navbar />
+      </div>
+
+      {/* Hero Content */}
+      <div className="mx-auto max-w-[1200px] px-6 pb-36 pt-20 lg:px-16 lg:pt-28">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
+          About Us
+        </p>
+
+        <h1 className="mt-6 max-w-3xl text-5xl font-extrabold leading-tight text-white md:text-6xl">
+          Caring for smiles with modern dentistry and a personal approach.
+        </h1>
+
+        <p className="mt-8 max-w-xl text-lg leading-8 text-blue-50">
+          We believe every patient deserves comfortable treatment, honest advice,
+          and long-term dental health delivered in a welcoming environment.
+        </p>
+      </div>
+
+      {/* Bottom Wave */}
+      <svg
+        viewBox="0 0 1440 220"
+        className="block w-full"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill="#ffffff"
+          d="M0,170 C140,120 240,210 370,165 C520,110 590,215 730,170 C860,125 930,20 1040,80 C1140,135 1230,190 1330,120 C1395,75 1425,50 1440,60 L1440,240 L0,240 Z"
+        />
+      </svg>
+    </section>
+  );
+};
