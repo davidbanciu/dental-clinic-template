@@ -5,6 +5,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { SocialIcons } from "./social-icons";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -147,9 +148,9 @@ export const Footer = () => {
             </p>
 
             <div className="flex gap-6">
-              <a href="#" className="hover:text-white">
+              <Link to="/privacy_policy" className="hover:text-white">
                 Privacy Policy
-              </a>
+              </Link>
 
               <a href="#" className="hover:text-white">
                 Terms & Conditions
