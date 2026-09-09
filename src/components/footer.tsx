@@ -152,9 +152,9 @@ export const Footer = () => {
                 Privacy Policy
               </Link>
 
-              <a href="#" className="hover:text-white">
+              <Link to="/terms_and_conditions" className="hover:text-white">
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

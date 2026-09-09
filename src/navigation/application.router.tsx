@@ -1,7 +1,7 @@
 import { Suspense, useMemo } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { useScrollToTopHandler } from './hooks';
-import { AboutScreen, ContactScreen, HomeScreen, PricingScreen, PrivacyPolicyScreen, ServicesScreen } from '../screens';
+import { AboutScreen, ContactScreen, HomeScreen, PricingScreen, PrivacyPolicyScreen, ServicesScreen, TermsAndConditionsScreen } from '../screens';
 
 export const ApplicationRouter = () => {
   useScrollToTopHandler()
@@ -15,11 +15,13 @@ export const ApplicationRouter = () => {
         <Route index element={<HomeScreen />} />
 
         {/* Starter */}
-        <Route path={'/contact'} element={<ContactScreen />}/>
         <Route path={'/about'} element={<AboutScreen />}/>
         <Route path={'/services'} element={<ServicesScreen />}/>
         <Route path={'/pricing'} element={<PricingScreen />}/>
+        <Route path={'/contact'} element={<ContactScreen />}/>
+        
         <Route path={'/privacy_policy'} element={<PrivacyPolicyScreen />}/>
+        <Route path={'/terms_and_conditions'} element={<TermsAndConditionsScreen />}/>
 
         {/* Professional */}
         {/* Testimonials.
