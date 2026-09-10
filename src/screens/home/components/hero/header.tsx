@@ -1,4 +1,4 @@
-import { Navbar } from "../../../../components/navbar";
+import { Navbar } from "../../../../shared-components";
 import { MediaAddress } from "./media-address";
 
 export const Header = () => {

@@ -1,5 +1,5 @@
 import { FileText } from "lucide-react";
-import { Navbar } from "../../../components/navbar";
+import { Navbar } from "../../../shared-components";
 
 export const TermsHero = () => {
   return (

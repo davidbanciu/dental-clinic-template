@@ -1,5 +1,5 @@
 import { ShieldCheck } from "lucide-react";
-import { Navbar } from "../../../components";
+import { Navbar } from "../../../shared-components";
 
 export const PrivacyPolicyHero = () => {
   return (

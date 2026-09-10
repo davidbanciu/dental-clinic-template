@@ -1,5 +1,5 @@
 import type { PropsWithChildren } from "react"
-import { Footer } from "../../components";
+import { Footer } from "../../shared-components";
 
 export const AppLayout = (props: PropsWithChildren) => {
   const { children } = props;

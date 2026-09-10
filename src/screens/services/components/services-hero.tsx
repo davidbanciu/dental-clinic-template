@@ -1,4 +1,4 @@
-import { Navbar } from "../../../components";
+import { Navbar } from "../../../shared-components";
 
 export const ServicesHero = () => {
   return (
