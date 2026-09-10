@@ -10,7 +10,7 @@ import officeImage from "../../../images/contact.jpg";
 export const ContactSection = () => {
   return (
     <section className="bg-white px-6 py-20 md:px-10 lg:px-16 xl:px-32">
-      <div className="mx-auto overflow-hidden rounded-3xl shadow-xl lg:grid lg:grid-cols-2">
+      <div className="mx-auto max-w-[1200px] overflow-hidden rounded-3xl shadow-xl lg:grid lg:grid-cols-2">
         {/* LEFT PANEL */}
         <div className="relative min-h-[500px] lg:min-h-[720px]">
           {/* Background Image */}
