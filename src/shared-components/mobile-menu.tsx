@@ -1,55 +1,31 @@
 import { Link } from "react-router-dom";
+import { useLanguage } from "../hooks";
 
 type Props = {
   isOpen: boolean;
 };
 
 export const MobileMenu = ({ isOpen }: Props) => {
+  const { t } = useLanguage();
+
+  if (!isOpen) return null;
+
   return (
-    <div
-      className={`absolute right-0 w-full md:relative md:w-auto ${
-        isOpen ? "block" : "hidden"
-      }`}
-    >
-      <nav className="w-full rounded bg-white px-6 py-4 shadow-lg md:bg-transparent md:p-0 md:shadow-none">
-        <ul className="items-center md:flex">
-          <li>
-            <Link
-              to="/about"
-              className="inline-block py-2 font-semibold hover:underline md:text-white"
-            >
-              About
-            </Link>
-          </li>
+    <div className="rounded-2xl bg-white p-6 shadow-xl lg:hidden">
+      <div className="flex flex-col gap-5 text-slate-800">
+        <Link to="/about">{t.navbar.about}</Link>
 
-          <li className="md:ml-4">
-            <Link
-              to="/pricing"
-              className="inline-block py-2 font-semibold hover:underline md:px-2 md:text-white"
-            >
-              Pricing
-            </Link>
-          </li>
+        <Link to="/pricing">{t.navbar.pricing}</Link>
 
-          <li className="md:ml-4">
-            <Link
-              to="/services"
-              className="inline-block py-2 font-semibold hover:underline md:px-2 md:text-white"
-            >
-              Services
-            </Link>
-          </li>
+        <Link to="/services">{t.navbar.services}</Link>
 
-          <li className="mt-3 md:ml-6 md:mt-0">
-            <Link
-              to="/contact"
-              className="inline-block rounded border border-white bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-white hover:text-green-400 md:bg-transparent"
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        <Link
+          to="/contact"
+          className="rounded-lg bg-sky-500 py-3 text-center font-medium text-white"
+        >
+          {t.navbar.contact}
+        </Link>
+      </div>
     </div>
   );
-}
+};

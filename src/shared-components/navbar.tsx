@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 import { MobileMenu } from "./mobile-menu";
+import { LanguageSwitcher } from "./language-switcher";
+import { useLanguage } from "../hooks";
 
 type Props = {
   dark?: boolean;
@@ -10,6 +12,8 @@ type Props = {
 
 export const Navbar = ({ dark = false }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const { t } = useLanguage();
 
   const handleMobileMenu = () => {
     setIsOpen((prev) => !prev);
@@ -30,38 +34,41 @@ export const Navbar = ({ dark = false }: Props) => {
           to="/"
           className={`text-2xl font-bold tracking-tight ${textColor}`}
         >
-          Dentist Marketing
+          {t.navbar.logo}
         </Link>
 
-        {/* Navigation Links */}
-        <div className="flex items-center gap-8">
+        {/* Navigation */}
+        <div className="flex items-center gap-6 xl:gap-8">
           <Link
             to="/about"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
-            About Us
+            {t.navbar.about}
           </Link>
 
           <Link
             to="/pricing"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
-            Pricing
+            {t.navbar.pricing}
           </Link>
 
           <Link
             to="/services"
             className={`text-sm font-medium transition-opacity hover:opacity-70 ${textColor}`}
           >
-            Services
+            {t.navbar.services}
           </Link>
 
           <Link
             to="/contact"
             className={`rounded border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${textColor} ${buttonBorder}`}
           >
-            Contact Us
+            {t.navbar.contact}
           </Link>
+
+          {/* Language Switcher */}
+          <LanguageSwitcher dark={dark} />
         </div>
       </nav>
 
@@ -71,21 +78,27 @@ export const Navbar = ({ dark = false }: Props) => {
           to="/"
           className={`text-2xl font-bold tracking-tight ${textColor}`}
         >
-          Dentist Marketing
+          {t.navbar.logo}
         </Link>
 
-        <button
-          type="button"
-          aria-label="Toggle mobile menu"
-          onClick={handleMobileMenu}
-          className={textColor}
-        >
-          {isOpen ? (
-            <X className="h-7 w-7" />
-          ) : (
-            <Menu className="h-7 w-7" />
-          )}
-        </button>
+        <div className="flex items-center gap-3">
+          {/* Language Switcher */}
+          <LanguageSwitcher dark={dark} />
+
+          {/* Hamburger */}
+          <button
+            type="button"
+            aria-label={t.navbar.mobileMenuLabel}
+            onClick={handleMobileMenu}
+            className={textColor}
+          >
+            {isOpen ? (
+              <X className="h-7 w-7" />
+            ) : (
+              <Menu className="h-7 w-7" />
+            )}
+          </button>
+        </div>
       </nav>
 
       <MobileMenu isOpen={isOpen} />

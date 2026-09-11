@@ -1,6 +1,11 @@
 import type { WebsiteContent } from "./types";
 
 export const ro: WebsiteContent = {
+  language: {
+    ro: "RO",
+    en: "EN",
+  },
+  
   navbar: {
     logo: "Clinica Smile Dental",
 

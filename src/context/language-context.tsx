@@ -15,10 +15,10 @@ type Props = {
 };
 
 export const LanguageProvider = ({ children }: Props) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("ro");
 
   const toggleLanguage = () => {
-    setLanguage((prev) => (prev === "en" ? "ro" : "en"));
+    setLanguage((prev) => (prev === "ro" ? "en" : "ro"));
   };
 
   return (
