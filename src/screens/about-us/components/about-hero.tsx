@@ -1,6 +1,9 @@
 import { Navbar } from "../../../shared-components";
+import { useLanguage } from "../../../hooks";
 
 export const AboutHero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-400">
       {/* Navbar */}
@@ -11,16 +14,15 @@ export const AboutHero = () => {
       {/* Hero Content */}
       <div className="mx-auto max-w-[1200px] px-6 pb-36 pt-20 lg:px-16 lg:pt-28">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
-          About Us
+          {t.about.hero.badge}
         </p>
 
         <h1 className="mt-6 max-w-3xl text-5xl font-extrabold leading-tight text-white md:text-6xl">
-          Caring for smiles with modern dentistry and a personal approach.
+          {t.about.hero.title}
         </h1>
 
         <p className="mt-8 max-w-xl text-lg leading-8 text-blue-50">
-          We believe every patient deserves comfortable treatment, honest advice,
-          and long-term dental health delivered in a welcoming environment.
+          {t.about.hero.subtitle}
         </p>
       </div>
 
