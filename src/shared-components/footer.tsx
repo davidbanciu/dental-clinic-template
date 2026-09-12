@@ -4,39 +4,41 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
-import { SocialIcons } from "./social-icons";
 import { Link } from "react-router-dom";
 
+import { SocialIcons } from "./social-icons";
+import { useLanguage } from "../hooks";
+
 export const Footer = () => {
+  const { t } = useLanguage();
+
   return (
-    <footer id="contact" className="bg-slate-900 pt-32 mt-16 text-white">
+    <footer id="contact" className="mt-16 bg-slate-900 pt-32 text-white">
       {/* CONTACT CTA */}
       <div className="mx-auto -mt-56 max-w-[1200px] px-6 md:px-10 lg:px-16">
         <div className="rounded-3xl bg-gradient-to-r from-blue-600 to-cyan-500 p-8 shadow-2xl md:p-12">
           <div className="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
-                Ready To Grow?
+                {t.footer.ctaBadge}
               </p>
 
               <h2 className="mt-4 text-4xl font-extrabold leading-tight md:text-5xl">
-                Let's Bring More Patients To Your Dental Practice.
+                {t.footer.ctaTitle}
               </h2>
 
               <p className="mt-6 text-lg leading-8 text-blue-50">
-                Schedule a free consultation and we'll show you exactly how your
-                clinic can attract more high-value patients through proven
-                digital marketing strategies.
+                {t.footer.ctaDescription}
               </p>
             </div>
 
-            <a
-              href="#contact-form"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-blue-600 transition hover:bg-slate-100"
             >
-              Book Free Consultation
+              {t.footer.ctaButton}
               <ArrowRight className="h-5 w-5" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -46,13 +48,10 @@ export const Footer = () => {
         <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <h3 className="text-3xl font-bold">
-              Dentist Marketing
-            </h3>
+            <h3 className="text-3xl font-bold">{t.navbar.logo}</h3>
 
             <p className="mt-5 leading-7 text-slate-400">
-              We help dental clinics grow through websites, SEO, Google Ads,
-              and social media marketing that brings in real patients.
+              {t.footer.description}
             </p>
 
             <div className="mt-6">
@@ -62,79 +61,69 @@ export const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-lg font-semibold">
-              Company
-            </h4>
+            <h4 className="text-lg font-semibold">{t.footer.company}</h4>
 
             <ul className="mt-5 space-y-3 text-slate-400">
               <li>
-                <a href="#about" className="transition hover:text-white">
-                  About Us
-                </a>
+                <Link to="/about" className="transition hover:text-white">
+                  {t.navbar.about}
+                </Link>
               </li>
 
               <li>
-                <a href="#marketing" className="transition hover:text-white">
-                  Marketing
-                </a>
+                <Link to="/services" className="transition hover:text-white">
+                  {t.navbar.services}
+                </Link>
               </li>
 
               <li>
-                <a href="#pricing" className="transition hover:text-white">
-                  Pricing
-                </a>
+                <Link to="/pricing" className="transition hover:text-white">
+                  {t.navbar.pricing}
+                </Link>
               </li>
 
               <li>
-                <a href="#blog" className="transition hover:text-white">
-                  Blog
-                </a>
+                <Link to="/contact" className="transition hover:text-white">
+                  {t.navbar.contact}
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold">
-              Services
-            </h4>
+            <h4 className="text-lg font-semibold">{t.footer.services}</h4>
 
             <ul className="mt-5 space-y-3 text-slate-400">
-              <li>Dental Website Design</li>
-              <li>Google Ads (PPC)</li>
-              <li>Local SEO</li>
-              <li>Social Media Marketing</li>
-              <li>Content Writing</li>
+              <li>{t.footer.serviceWebsite}</li>
+              <li>{t.footer.serviceAds}</li>
+              <li>{t.footer.serviceSeo}</li>
+              <li>{t.footer.serviceSocial}</li>
+              <li>{t.footer.serviceContent}</li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold">
-              Contact
-            </h4>
+            <h4 className="text-lg font-semibold">{t.footer.contact}</h4>
 
             <div className="mt-5 space-y-5 text-slate-400">
               <div className="flex items-start gap-3">
                 <MapPin className="mt-1 h-5 w-5 text-cyan-400" />
 
-                <span>
-                  3 Abbey Rd,
-                  <br />
-                  London, United Kingdom
-                </span>
+                <span>{t.contact.info.address}</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-cyan-400" />
 
-                <span>(+27) 81 343 4552</span>
+                <span>{t.contact.info.phone}</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-cyan-400" />
 
-                <span>hello@dentistmarketing.com</span>
+                <span>{t.contact.info.email}</span>
               </div>
             </div>
           </div>
@@ -143,17 +132,15 @@ export const Footer = () => {
         {/* Bottom Divider */}
         <div className="mt-16 border-t border-slate-700 pt-6">
           <div className="flex flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-            <p>
-              © 2026 Dentist Marketing. All rights reserved.
-            </p>
+            <p>{t.footer.rights}</p>
 
             <div className="flex gap-6">
               <Link to="/privacy_policy" className="hover:text-white">
-                Privacy Policy
+                {t.footer.privacyPolicy}
               </Link>
 
               <Link to="/terms_and_conditions" className="hover:text-white">
-                Terms & Conditions
+                {t.footer.terms}
               </Link>
             </div>
           </div>
@@ -161,4 +148,4 @@ export const Footer = () => {
       </div>
     </footer>
   );
-}
+};

@@ -215,10 +215,28 @@ export const en: WebsiteContent = {
   },
 
   footer: {
+    ctaBadge: "Ready To Grow?",
+    ctaTitle: "Let's Bring More Patients To Your Dental Practice.",
+    ctaDescription:
+      "Schedule a free consultation and we'll show you exactly how your clinic can attract more high-value patients through proven digital marketing strategies.",
+    ctaButton: "Book Free Consultation",
+
     description:
       "Helping dental clinics grow with modern websites and marketing strategies.",
-    quickLinks: "Quick Links",
+    company: "Company",
+    services: "Services",
     contact: "Contact",
+    quickLinks: "Quick Links",
+
+    serviceWebsite: "Dental Website Design",
+    serviceAds: "Google Ads (PPC)",
+    serviceSeo: "Local SEO",
+    serviceSocial: "Social Media Marketing",
+    serviceContent: "Content Writing",
+
+    privacyPolicy: "Privacy Policy",
+    terms: "Terms & Conditions",
+
     rights: "© 2026 Dentist Marketing. All rights reserved.",
   },
 

@@ -170,12 +170,7 @@ export type WebsiteContent = {
     };
   };
 
-  footer: {
-    description: string;
-    quickLinks: string;
-    contact: string;
-    rights: string;
-  };
+  footer: Footer;
 
   privacyPolicy: {
     hero: {
@@ -245,4 +240,28 @@ export type WebsiteContent = {
       contactText: string;
     };
   };
+};
+
+type Footer = {
+  ctaBadge: string;
+  ctaTitle: string;
+  ctaDescription: string;
+  ctaButton: string;
+
+  description: string;
+  company: string;
+  services: string;
+  contact: string;
+  quickLinks: string;
+
+  serviceWebsite: string;
+  serviceAds: string;
+  serviceSeo: string;
+  serviceSocial: string;
+  serviceContent: string;
+
+  privacyPolicy: string;
+  terms: string;
+
+  rights: string;
 };

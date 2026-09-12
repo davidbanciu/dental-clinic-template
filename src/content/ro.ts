@@ -215,10 +215,28 @@ export const ro: WebsiteContent = {
   },
 
   footer: {
+    ctaBadge: "Pregătit să Crești?",
+    ctaTitle: "Hai să aducem mai mulți pacienți în cabinetul tău.",
+    ctaDescription:
+      "Programează o consultație gratuită și îți vom arăta cum poate cabinetul tău să atragă mai mulți pacienți prin strategii moderne de marketing digital.",
+    ctaButton: "Programează o Consultație Gratuită",
+
     description:
       "Ajutăm cabinetele stomatologice să atragă mai mulți pacienți prin website-uri moderne și strategii de marketing eficiente.",
-    quickLinks: "Link-uri Rapide",
+    company: "Companie",
+    services: "Servicii",
     contact: "Contact",
+    quickLinks: "Link-uri Rapide",
+
+    serviceWebsite: "Website pentru Cabinet",
+    serviceAds: "Google Ads (PPC)",
+    serviceSeo: "SEO Local",
+    serviceSocial: "Marketing Social Media",
+    serviceContent: "Creare Conținut",
+
+    privacyPolicy: "Politica de Confidențialitate",
+    terms: "Termeni și Condiții",
+
     rights: "© 2026 Dentist Marketing. Toate drepturile rezervate.",
   },
 

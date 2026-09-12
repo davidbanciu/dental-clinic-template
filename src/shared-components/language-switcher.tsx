@@ -5,7 +5,7 @@ type Props = {
 };
 
 export const LanguageSwitcher = ({ dark = false }: Props) => {
-  const { language, setLanguage } = useLanguage();
+  const { t, language, setLanguage } = useLanguage();
 
   const container = dark
     ? "border-slate-300 bg-slate-100"
@@ -16,29 +16,33 @@ export const LanguageSwitcher = ({ dark = false }: Props) => {
     : "bg-white text-slate-900 shadow-md";
 
   const inactive = dark
-    ? "text-white/80 hover:text-white"
-    : "text-slate-500 hover:text-slate-900";
+    ? "text-slate-500 hover:text-slate-900"
+    : "text-white/80 hover:text-white";
 
   return (
     <div
       className={`flex items-center rounded-full border p-1 transition-all ${container}`}
     >
       <button
+        type="button"
         onClick={() => setLanguage("ro")}
+        aria-label="Romanian"
         className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
           language === "ro" ? active : inactive
         }`}
       >
-        RO
+        {t.language.ro}
       </button>
 
       <button
+        type="button"
         onClick={() => setLanguage("en")}
+        aria-label="English"
         className={`rounded-full px-4 py-2 text-xs font-semibold transition-all ${
           language === "en" ? active : inactive
         }`}
       >
-        EN
+        {t.language.en}
       </button>
     </div>
   );
