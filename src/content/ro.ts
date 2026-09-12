@@ -206,10 +206,22 @@ export const ro: WebsiteContent = {
 
     form: {
       title: "Ai o întrebare?",
-      subtitle: "Trimite-ne un mesaj și îți vom răspunde cât mai curând.",
+      subtitle:
+        "Completează formularul de mai jos și îți vom răspunde în cel mult o zi lucrătoare.",
+
       name: "Nume",
+      namePlaceholder: "Numele tău",
+
       email: "Email",
-      message: "Mesajul tău",
+      emailPlaceholder: "Adresa ta de email",
+
+      subject: "Subiect",
+      subjectPlaceholder: "Website / SEO / Google Ads...",
+
+      message: "Mesaj",
+      messagePlaceholder:
+        "Spune-ne câteva detalii despre cabinetul tău și despre ce îți dorești.",
+
       button: "Trimite Mesajul",
     },
   },

@@ -6,36 +6,35 @@ import {
 } from "lucide-react";
 
 import officeImage from "../../../images/contact.jpg";
+import { useLanguage } from "../../../hooks";
 
 export const ContactSection = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-white px-6 py-20 md:px-10 lg:px-16 xl:px-32">
       <div className="mx-auto max-w-[1200px] overflow-hidden rounded-3xl shadow-xl lg:grid lg:grid-cols-2">
         {/* LEFT PANEL */}
         <div className="relative min-h-[500px] lg:min-h-[720px]">
-          {/* Background Image */}
           <img
             src={officeImage}
-            alt="Office"
+            alt="Dental Office"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
-          {/* Dark Overlay */}
           <div className="absolute inset-0 bg-slate-900/65" />
 
-          {/* Contact Details */}
           <div className="relative z-10 flex h-full flex-col justify-center p-10 text-white md:p-14">
             <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-              Contact Us
+              {t.contact.hero.badge}
             </p>
 
             <h2 className="mt-4 text-4xl font-extrabold leading-tight">
-              Let's Talk About Growing Your Practice.
+              {t.contact.hero.title}
             </h2>
 
             <p className="mt-5 leading-8 text-slate-200">
-              Whether you're looking for more patients, better SEO, or a brand
-              new website, we'd love to hear about your clinic.
+              {t.contact.hero.subtitle}
             </p>
 
             <div className="mt-12 space-y-8">
@@ -47,11 +46,11 @@ export const ContactSection = () => {
 
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-300">
-                    Telephone Number
+                    {t.contact.info.phoneLabel}
                   </p>
 
                   <p className="mt-1 text-lg font-semibold">
-                    (+27) 81 343 4552
+                    {t.contact.info.phone}
                   </p>
                 </div>
               </div>
@@ -64,11 +63,11 @@ export const ContactSection = () => {
 
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-300">
-                    Email Address
+                    {t.contact.info.emailLabel}
                   </p>
 
                   <p className="mt-1 text-lg font-semibold">
-                    hello@dentistmarketing.com
+                    {t.contact.info.email}
                   </p>
                 </div>
               </div>
@@ -81,13 +80,11 @@ export const ContactSection = () => {
 
                 <div>
                   <p className="text-xs uppercase tracking-[0.2em] text-slate-300">
-                    Physical Address
+                    {t.contact.info.addressLabel}
                   </p>
 
-                  <p className="mt-1 text-lg font-semibold">
-                    3 Abbey Rd, London,
-                    <br />
-                    United Kingdom
+                  <p className="mt-1 text-lg font-semibold whitespace-pre-line">
+                    {t.contact.info.address}
                   </p>
                 </div>
               </div>
@@ -96,68 +93,68 @@ export const ContactSection = () => {
         </div>
 
         {/* RIGHT PANEL */}
-        <div
-          id="contact-form"
-          className="bg-white p-8 md:p-14 lg:p-16"
-        >
+        <div id="contact-form" className="bg-white p-8 md:p-14 lg:p-16">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">
-            Have a Question?
+            {t.contact.form.title}
           </p>
 
           <h3 className="mt-4 text-4xl font-bold text-slate-900">
-            Send Us a Message.
+            {t.contact.hero.title}
           </h3>
 
           <p className="mt-5 leading-8 text-slate-500">
-            Fill out the form below and we'll get back to you within one
-            business day.
+            {t.contact.form.subtitle}
           </p>
 
           <form className="mt-10 space-y-8">
+            {/* Name */}
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">
-                Name
+                {t.contact.form.name}
               </label>
 
               <input
                 type="text"
-                placeholder="Your name"
+                placeholder={t.contact.form.namePlaceholder}
                 className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
               />
             </div>
 
+            {/* Email */}
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">
-                Email
+                {t.contact.form.email}
               </label>
 
               <input
                 type="email"
-                placeholder="Your email address"
+                placeholder={t.contact.form.emailPlaceholder}
                 className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
               />
             </div>
 
+            {/* Subject */}
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">
-                Subject
+                {t.contact.form.subject}
               </label>
 
               <input
                 type="text"
-                placeholder="Website / SEO / Google Ads..."
+                placeholder={t.contact.form.subjectPlaceholder}
                 className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
               />
             </div>
 
+            {/* Message */}
             <div>
               <label className="mb-2 block text-sm font-medium text-slate-700">
-                Your Message
+                {t.contact.form.message}
               </label>
 
               <textarea
                 rows={6}
-                placeholder="Tell us a little about your dental practice and what you're looking for."
+                placeholder={t.contact.form.messagePlaceholder}
                 className="w-full rounded-xl border border-slate-300 p-4 outline-none transition focus:border-blue-500"
               />
             </div>
@@ -167,11 +164,12 @@ export const ContactSection = () => {
               className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-400 px-6 py-4 text-lg font-semibold text-white transition hover:opacity-90 md:w-auto"
             >
               <Send className="h-5 w-5" />
-              Send Message
+
+              {t.contact.form.button}
             </button>
           </form>
         </div>
       </div>
     </section>
   );
-}
+};

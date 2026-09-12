@@ -144,31 +144,7 @@ export type WebsiteContent = {
     };
   };
 
-  contact: {
-    hero: {
-      badge: string;
-      title: string;
-      subtitle: string;
-    };
-
-    info: {
-      phoneLabel: string;
-      phone: string;
-      emailLabel: string;
-      email: string;
-      addressLabel: string;
-      address: string;
-    };
-
-    form: {
-      title: string;
-      subtitle: string;
-      name: string;
-      email: string;
-      message: string;
-      button: string;
-    };
-  };
+  contact: Contact
 
   footer: Footer;
 
@@ -265,3 +241,39 @@ type Footer = {
 
   rights: string;
 };
+
+type Contact = {
+  hero: {
+    badge: string;
+    title: string;
+    subtitle: string;
+  };
+
+  info: {
+    phoneLabel: string;
+    phone: string;
+    emailLabel: string;
+    email: string;
+    addressLabel: string;
+    address: string;
+  };
+
+  form: {
+    title: string;
+    subtitle: string;
+
+    name: string;
+    namePlaceholder: string;
+
+    email: string;
+    emailPlaceholder: string;
+
+    subject: string;
+    subjectPlaceholder: string;
+
+    message: string;
+    messagePlaceholder: string;
+
+    button: string;
+  };
+}

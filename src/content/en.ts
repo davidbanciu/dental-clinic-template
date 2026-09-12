@@ -185,10 +185,10 @@ export const en: WebsiteContent = {
     },
   },
 
-  contact: {
+ contact: {
     hero: {
       badge: "Contact Us",
-      title: "Let's grow your dental clinic together.",
+      title: "Let's Grow Your Dental Clinic Together.",
       subtitle:
         "Have a question about our services or want to discuss your website? We'd love to hear from you.",
     },
@@ -198,7 +198,7 @@ export const en: WebsiteContent = {
       phone: "(+27) 81 343 4552",
 
       emailLabel: "Email Address",
-      email: "agency@business.com",
+      email: "hello@dentistmarketing.com",
 
       addressLabel: "Clinic Address",
       address: "3 Abbey Rd, London, United Kingdom",
@@ -206,10 +206,22 @@ export const en: WebsiteContent = {
 
     form: {
       title: "Have a Question?",
-      subtitle: "Send us a message and we'll get back to you.",
+      subtitle:
+        "Fill out the form below and we'll get back to you within one business day.",
+
       name: "Name",
+      namePlaceholder: "Your name",
+
       email: "Email",
+      emailPlaceholder: "Your email address",
+
+      subject: "Subject",
+      subjectPlaceholder: "Website / SEO / Google Ads...",
+
       message: "Your Message",
+      messagePlaceholder:
+        "Tell us a little about your dental practice and what you're looking for.",
+
       button: "Send Message",
     },
   },
