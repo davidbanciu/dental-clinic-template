@@ -1,93 +1,83 @@
+import { useLanguage } from "../../../hooks";
+
 export const PrivacyPolicyContent = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-slate-50 px-6 py-20 lg:px-16">
       <div className="mx-auto max-w-[850px] rounded-3xl bg-white p-8 shadow-sm lg:p-12">
         <p className="text-sm text-slate-500">
-          Last updated: September 2026
+          {t.privacyPolicy.lastUpdated}
         </p>
 
         <div className="mt-10 space-y-10 text-slate-600">
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              1. Information We Collect
+              {t.privacyPolicy.sections.informationCollected}
             </h2>
 
             <p className="mt-4 leading-8">
-              We may collect personal information that you voluntarily provide,
-              including your name, email address, phone number, and any
-              information submitted through our contact form.
+              {t.privacyPolicy.sections.informationCollectedText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              2. How We Use Your Information
+              {t.privacyPolicy.sections.howWeUse}
             </h2>
 
             <p className="mt-4 leading-8">
-              We use your information to respond to enquiries, schedule
-              appointments, improve our website, and communicate with you when
-              necessary regarding our dental services.
+              {t.privacyPolicy.sections.howWeUseText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              3. Cookies
+              {t.privacyPolicy.sections.cookies}
             </h2>
 
             <p className="mt-4 leading-8">
-              Our website may use cookies to improve your browsing experience and
-              understand how visitors interact with our website. You can disable
-              cookies through your browser settings.
+              {t.privacyPolicy.sections.cookiesText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              4. Data Security
+              {t.privacyPolicy.sections.security}
             </h2>
 
             <p className="mt-4 leading-8">
-              We take reasonable steps to protect your personal information from
-              unauthorized access, disclosure, or misuse. However, no method of
-              internet transmission is completely secure.
+              {t.privacyPolicy.sections.securityText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              5. Third-Party Services
+              {t.privacyPolicy.sections.thirdParty}
             </h2>
 
             <p className="mt-4 leading-8">
-              Our website may use trusted third-party services for website
-              analytics, maps, or contact forms. These providers may process data
-              in accordance with their own privacy policies.
+              {t.privacyPolicy.sections.thirdPartyText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              6. Your Rights
+              {t.privacyPolicy.sections.rights}
             </h2>
 
             <p className="mt-4 leading-8">
-              Depending on your location, you may have the right to request
-              access, correction, or deletion of your personal information, or to
-              withdraw consent for certain processing activities.
+              {t.privacyPolicy.sections.rightsText}
             </p>
           </div>
 
           <div>
             <h2 className="text-2xl font-bold text-slate-900">
-              7. Contact Us
+              {t.privacyPolicy.sections.contact}
             </h2>
 
             <p className="mt-4 leading-8">
-              If you have any questions about this Privacy Policy or how your
-              information is handled, please contact our clinic using the contact
-              information provided on this website.
+              {t.privacyPolicy.sections.contactText}
             </p>
           </div>
         </div>

@@ -1,7 +1,11 @@
 import { ShieldCheck } from "lucide-react";
+
 import { Navbar } from "../../../shared-components";
+import { useLanguage } from "../../../hooks";
 
 export const PrivacyPolicyHero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-white">
       {/* Navbar */}
@@ -18,16 +22,15 @@ export const PrivacyPolicyHero = () => {
         </div>
 
         <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">
-          Legal
+          {t.privacyPolicy.hero.badge}
         </p>
 
         <h1 className="mt-4 text-5xl font-extrabold text-slate-900 md:text-6xl">
-          Privacy Policy
+          {t.privacyPolicy.hero.title}
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-500">
-          Learn how we collect, use, and protect your personal information when
-          you visit our website or contact our clinic.
+          {t.privacyPolicy.hero.subtitle}
         </p>
       </div>
     </section>
