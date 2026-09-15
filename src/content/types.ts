@@ -19,45 +19,56 @@ export type WebsiteContent = {
       title: string;
       subtitle: string;
       button: string;
+      address: string;
+      phone: string;
     };
 
     whyChooseUs: {
       badge: string;
       title: string;
-      subtitle: string;
+      heading: string;
       description: string;
-
-      card1: {
-        title: string;
-        description: string;
-      };
-
-      card2: {
-        title: string;
-        description: string;
+      items: {
+        experiencedCare: {
+          title: string;
+          description: string;
+        };
+        modernDentistry: {
+          title: string;
+          description: string;
+        };
       };
     };
 
-    marketingApproach: {
-      badge: string;
+    ourApproach: {
       title: string;
-      subtitle: string;
-
-      website: {
-        title: string;
-        description: string;
+      description: string;
+      items: {
+        personalizedCare: {
+          title: string;
+          description: string;
+        };
+        modernTechnology: {
+          title: string;
+          description: string;
+        };
+        comfortableExperience: {
+          title: string;
+          description: string;
+        };
+        preventiveCare: {
+          title: string;
+          description: string;
+        };
+        clearCommunication: {
+          title: string;
+          description: string;
+        };
+        longTermResults: {
+          title: string;
+          description: string;
+        };
       };
-
-      ppc: {
-        title: string;
-        description: string;
-      };
-
-      seo: {
-        title: string;
-        description: string;
-      };
-
       readMore: string;
     };
 
@@ -65,7 +76,8 @@ export type WebsiteContent = {
       badge: string;
       title: string;
       description: string;
-      button: string;
+      readMore: string;
+      caption: string;
     };
   };
 

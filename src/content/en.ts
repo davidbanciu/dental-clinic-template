@@ -22,50 +22,73 @@ export const en: WebsiteContent = {
       subtitle:
         "We specialize in marketing that helps dental clinics attract more patients and grow their business.",
       button: "Learn More",
+      address: "3 Abbey Rd, London, United Kingdom",
+      phone: "(+27) 81 343 4552",
     },
 
     whyChooseUs: {
-      badge: "Our Specialty",
-      title: "This is the start of your business success",
-      subtitle: "Where industry insight and marketing expertise meet.",
+      badge: "Why Choose Us",
+      title: "Your smile deserves exceptional care.",
+      heading: "Experienced dentistry with a personal touch.",
       description:
-        "We help dental clinics stand out online through modern websites, advertising, and SEO strategies designed specifically for dentists.",
+        "We combine experience, modern technology, and compassionate care to provide high-quality dental treatment in a comfortable and welcoming environment.",
 
-      card1: {
-        title: "Complete Marketing Package",
-        description:
-          "Everything you need to grow your dental clinic, from a professional website to advertising campaigns and SEO.",
-      },
+      items: {
+        experiencedCare: {
+          title: "Experienced & Trusted Care",
+          description:
+            "Our team provides professional dental care with attention to detail, honest guidance, and treatment plans tailored to every patient.",
+        },
 
-      card2: {
-        title: "A Strategy Built for Dentists",
-        description:
-          "We focus exclusively on dental practices, so every decision is made with your patients and your business in mind.",
+        modernDentistry: {
+          title: "Modern, Patient-Focused Dentistry",
+          description:
+            "From advanced technology to a comfortable clinic environment, every part of your experience is designed around your needs and wellbeing.",
+        },
       },
     },
 
-    marketingApproach: {
-      badge: "Marketing Services",
-      title: "Our Marketing Approach",
-      subtitle:
-        "Tailored strategies that help dental clinics grow in a competitive market.",
+    ourApproach: {
+      title: "Our Approach",
+      description:
+        "We believe great dental care should be personal, comfortable, and focused on your long-term health.",
 
-      website: {
-        title: "Effective Websites",
-        description:
-          "Professional websites designed to convert visitors into patients.",
-      },
+      items: {
+        personalizedCare: {
+          title: "Personalized Care",
+          description:
+            "Every treatment plan is tailored to your individual needs, goals, and oral health.",
+        },
 
-      ppc: {
-        title: "Google Ads (PPC)",
-        description:
-          "Targeted advertising campaigns that bring high-quality patient enquiries.",
-      },
+        modernTechnology: {
+          title: "Modern Technology",
+          description:
+            "We use modern equipment and techniques to provide precise, effective, and comfortable treatments.",
+        },
 
-      seo: {
-        title: "SEO",
-        description:
-          "Improve your visibility on Google and attract more local patients.",
+        comfortableExperience: {
+          title: "Comfortable Experience",
+          description:
+            "We create a welcoming environment where you can feel relaxed and confident throughout your visit.",
+        },
+
+        preventiveCare: {
+          title: "Preventive Care",
+          description:
+            "We focus on prevention and regular care to help you maintain a healthy smile for years to come.",
+        },
+
+        clearCommunication: {
+          title: "Clear Communication",
+          description:
+            "We explain your treatment options clearly so you can make informed decisions about your dental health.",
+        },
+
+        longTermResults: {
+          title: "Long-Term Results",
+          description:
+            "Our goal is to provide lasting results while helping you maintain your oral health over time.",
+        },
       },
 
       readMore: "Read More",
@@ -75,8 +98,9 @@ export const en: WebsiteContent = {
       badge: "Improve Right Now",
       title: "7 Lead Generation Tips for Dentist Websites",
       description:
-        "Discover practical ways to increase enquiries and turn your website into a patient-generating machine.",
-      button: "Read Article",
+        "Discover practical strategies that help dental clinics generate more appointments through better websites, SEO, paid advertising, and conversion-focused landing pages.",
+      readMore: "Read Article",
+      caption: "Practical strategies for growing your dental practice online.",
     },
   },
 

@@ -1,12 +1,12 @@
 import { AppLayout } from "../../navigation";
-import { FeaturedArticle, Hero, MarketingApproach, WhyChooseUs } from "./components";
+import { FeaturedArticle, Hero, OurApproach, WhyChooseUs } from "./components";
 
 export const HomeScreen = () => {
   return (
     <AppLayout>
       <Hero />
       <WhyChooseUs />
-      <MarketingApproach />
+      <OurApproach />
       <FeaturedArticle />
     </AppLayout>
   );

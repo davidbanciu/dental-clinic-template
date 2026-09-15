@@ -1,14 +1,20 @@
+import { Link } from "react-router-dom";
+
 import { Header } from "./header";
-import agency_hero from "../../../../images/agency_hero.jpg";
+import agencyHero from "../../../../images/agency_hero.jpg";
+
+import { useLanguage } from "../../../../hooks";
 
 export const Hero = () => {
+  const { t } = useLanguage();
+
   return (
-    <div className="relative min-h-[795px] overflow-hidden rounded-br-[320px]">
+    <section className="relative min-h-[795px] overflow-hidden rounded-br-[320px]">
       {/* Background image */}
       <img
-        src={agency_hero}
-        alt=""
-        className="absolute inset-0 z-0 h-full w-full object-cover max-h-full max-w-full"
+        src={agencyHero}
+        alt="Dental clinic"
+        className="absolute inset-0 z-0 h-full w-full object-cover"
       />
 
       {/* Gradient overlay */}
@@ -18,30 +24,28 @@ export const Hero = () => {
       <Header />
 
       {/* Hero content */}
-      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1040px] items-center">
-        <div className="max-w-[520px] pt-20 px-12">
-          <h1 className="text-5xl font-extrabold leading-[1.05] text-white xl:text-6xl">
-            Are you ready for
-            <br />
-            a ton more
-            <br />
-            patients?
-          </h1>
-
-          <p className="mt-5 max-w-[500px] text-lg leading-relaxed text-white">
-            We specialize in marketing for a focused cause
-            <br />
-            to bring you results - more business.
+      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1040px] items-center px-6 lg:px-0">
+        <div className="max-w-[520px] pt-20">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
+            {t.home.hero.badge}
           </p>
 
-          <a
-            href="#contact"
-            className="mt-8 inline-flex bg-blue-600 px-8 py-4 text-sm font-semibold text-white transition-colors hover:bg-blue-700"
+          <h1 className="mt-6 text-5xl font-extrabold leading-[1.05] text-white xl:text-6xl">
+            {t.home.hero.title}
+          </h1>
+
+          <p className="mt-6 max-w-[500px] text-lg leading-relaxed text-white">
+            {t.home.hero.subtitle}
+          </p>
+
+          <Link
+            to="/contact"
+            className="mt-8 inline-flex rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-blue-700"
           >
-            LEARN HOW
-          </a>
+            {t.home.hero.button}
+          </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};

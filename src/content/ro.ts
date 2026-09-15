@@ -22,61 +22,86 @@ export const ro: WebsiteContent = {
       subtitle:
         "Suntem specializați în marketing pentru cabinete stomatologice și te ajutăm să atragi mai mulți pacienți și să îți dezvolți afacerea.",
       button: "Află Mai Multe",
+      address: "Strada Exemplu 10, București, România",
+      phone: "(+40) 721 234 567",
     },
 
     whyChooseUs: {
-      badge: "Specialitatea Noastră",
-      title: "Aici începe succesul cabinetului tău",
-      subtitle: "Locul unde experiența în marketing întâlnește stomatologia.",
+      badge: "De Ce Să Ne Alegi",
+      title: "Zâmbetul tău merită o îngrijire deosebită.",
+      heading: "Stomatologie cu experiență și o abordare personală.",
       description:
-        "Ajutăm cabinetele stomatologice să iasă în evidență online prin website-uri moderne, reclame eficiente și strategii SEO create special pentru stomatologi.",
+        "Combinăm experiența, tehnologia modernă și grija pentru pacienți pentru a oferi tratamente stomatologice de calitate într-un mediu confortabil și primitor.",
 
-      card1: {
-        title: "Pachet Complet de Marketing",
-        description:
-          "Tot ce ai nevoie pentru a-ți dezvolta cabinetul: website profesional, reclame Google și optimizare SEO.",
-      },
+      items: {
+        experiencedCare: {
+          title: "Îngrijire cu Experiență",
+          description:
+            "Echipa noastră oferă servicii stomatologice profesionale, cu atenție la detalii, recomandări corecte și planuri de tratament adaptate fiecărui pacient.",
+        },
 
-      card2: {
-        title: "O Strategie Creată pentru Stomatologi",
-        description:
-          "Lucrăm exclusiv cu cabinete stomatologice, astfel încât fiecare decizie este orientată către atragerea de pacienți noi și creșterea încrederii.",
+        modernDentistry: {
+          title: "Stomatologie Modernă, Centrată pe Pacient",
+          description:
+            "De la tehnologia modernă până la atmosfera cabinetului, fiecare aspect al experienței tale este conceput pentru nevoile și confortul tău.",
+        },
       },
     },
 
-    marketingApproach: {
-      badge: "Serviciile Noastre",
-      title: "Abordarea Noastră de Marketing",
-      subtitle:
-        "Strategii personalizate pentru a ajuta cabinetele stomatologice să crească într-o piață competitivă.",
+    ourApproach: {
+      title: "Abordarea Noastră",
+      description:
+        "Credem că îngrijirea dentară trebuie să fie personalizată, confortabilă și orientată către sănătatea ta pe termen lung.",
 
-      website: {
-        title: "Website-uri Eficiente",
-        description:
-          "Website-uri moderne și rapide, create pentru a transforma vizitatorii în pacienți.",
+      items: {
+        personalizedCare: {
+          title: "Îngrijire Personalizată",
+          description:
+            "Fiecare plan de tratament este adaptat nevoilor, obiectivelor și sănătății tale orale.",
+        },
+
+        modernTechnology: {
+          title: "Tehnologie Modernă",
+          description:
+            "Folosim echipamente și tehnici moderne pentru tratamente precise, eficiente și confortabile.",
+        },
+
+        comfortableExperience: {
+          title: "O Experiență Confortabilă",
+          description:
+            "Creăm un mediu primitor în care te poți simți relaxat și încrezător pe tot parcursul vizitei.",
+        },
+
+        preventiveCare: {
+          title: "Prevenție",
+          description:
+            "Punem accent pe prevenție și îngrijire regulată pentru a te ajuta să îți menții zâmbetul sănătos pe termen lung.",
+        },
+
+        clearCommunication: {
+          title: "Comunicare Clară",
+          description:
+            "Îți explicăm opțiunile de tratament într-un mod clar, pentru ca tu să poți lua decizii informate.",
+        },
+
+        longTermResults: {
+          title: "Rezultate pe Termen Lung",
+          description:
+            "Ne dorim să oferim rezultate de durată și să te ajutăm să îți menții sănătatea orală în timp.",
+        },
       },
 
-      ppc: {
-        title: "Google Ads (PPC)",
-        description:
-          "Campanii de publicitate targetate care aduc solicitări de la pacienți cu adevărat interesați.",
-      },
-
-      seo: {
-        title: "Optimizare SEO",
-        description:
-          "Crește vizibilitatea cabinetului tău pe Google și atrage mai mulți pacienți din zona ta.",
-      },
-
-      readMore: "Citește Mai Mult",
+      readMore: "Află Mai Multe",
     },
 
     featuredArticle: {
-      badge: "Îmbunătățește Chiar Acum",
-      title: "7 metode prin care website-ul unui cabinet stomatologic poate genera mai mulți pacienți",
+      badge: "Îmbunătățește-ți Cabinetul Chiar Acum",
+      title: "7 Strategii pentru a Atrage Mai Mulți Pacienți prin Website",
       description:
-        "Descoperă câteva idei practice prin care website-ul tău poate deveni o sursă constantă de programări noi.",
-      button: "Citește Articolul",
+        "Descoperă strategii practice care ajută cabinetele stomatologice să obțină mai multe programări printr-un website mai bun, SEO, publicitate online și pagini optimizate pentru conversii.",
+      readMore: "Citește Articolul",
+      caption:
+        "Strategii practice pentru dezvoltarea cabinetului tău stomatologic online.",
     },
   },
 
