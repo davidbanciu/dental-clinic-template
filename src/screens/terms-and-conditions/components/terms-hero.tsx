@@ -1,7 +1,11 @@
 import { FileText } from "lucide-react";
+
 import { Navbar } from "../../../shared-components";
+import { useLanguage } from "../../../hooks";
 
 export const TermsHero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="bg-white">
       {/* Navbar */}
@@ -18,16 +22,15 @@ export const TermsHero = () => {
         </div>
 
         <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
-          Legal
+          {t.terms.hero.badge}
         </p>
 
         <h1 className="mt-4 text-5xl font-extrabold text-slate-900 md:text-6xl">
-          Terms & Conditions
+          {t.terms.hero.title}
         </h1>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-500">
-          Please read these terms carefully before using our website or booking
-          services with our clinic.
+          {t.terms.hero.subtitle}
         </p>
       </div>
     </section>
