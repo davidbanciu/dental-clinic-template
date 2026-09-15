@@ -365,4 +365,11 @@ export const ro: WebsiteContent = {
         "Pentru orice întrebare referitoare la acești Termeni și Condiții, ne poți contacta folosind informațiile disponibile pe pagina Contact.",
     },
   },
+
+  social: {
+    facebook: "https://www.facebook.com/yourclinic",
+    x: "https://x.com/yourclinic",
+    instagram: "https://www.instagram.com/yourclinic",
+    youtube: "https://www.youtube.com/@yourclinic",
+  },
 };

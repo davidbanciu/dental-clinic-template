@@ -231,6 +231,8 @@ export type WebsiteContent = {
       contactText: string;
     };
   };
+
+  social: Social;
 };
 
 type Footer = {
@@ -292,3 +294,10 @@ type Contact = {
     button: string;
   };
 }
+
+type Social = {
+  facebook: string;
+  x: string;
+  instagram: string;
+  youtube: string;
+};

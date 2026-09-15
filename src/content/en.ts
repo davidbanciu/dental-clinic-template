@@ -364,4 +364,11 @@ export const en: WebsiteContent = {
         "For questions regarding these Terms & Conditions, please contact us using the information on the Contact page.",
     },
   },
+
+  social: {
+    facebook: "https://www.facebook.com/yourclinic",
+    x: "https://x.com/yourclinic",
+    instagram: "https://www.instagram.com/yourclinic",
+    youtube: "https://www.youtube.com/@yourclinic",
+  },
 };
