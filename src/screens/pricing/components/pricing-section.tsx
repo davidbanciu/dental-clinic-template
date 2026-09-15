@@ -1,80 +1,73 @@
 import { Check } from "lucide-react";
-
-const plans = [
-  {
-    name: "Basic",
-    price: "250",
-    popular: false,
-    features: [
-      "Get started with SEO",
-      "Monthly ROI assessment",
-      "Ongoing website support",
-    ],
-  },
-  {
-    name: "Premium",
-    price: "390",
-    popular: true,
-    features: [
-      "All features in Basic",
-      "2x targeted blog articles",
-      "Effective web design",
-    ],
-  },
-  {
-    name: "Enterprise",
-    price: "430",
-    popular: false,
-    features: [
-      "All features in Premium",
-      "Daily social media engagement",
-      "Advanced AdWords management",
-    ],
-  },
-];
+import { useLanguage } from "../../../hooks";
 
 export const PricingSection = () => {
+  const { t } = useLanguage();
+
+  const plans = [
+    {
+      name: t.pricing.starter.name,
+      price: t.pricing.starter.price,
+      period: t.pricing.starter.period,
+      popular: false,
+      features: t.pricing.starter.features,
+      button: t.pricing.starter.button,
+    },
+    {
+      name: t.pricing.professional.name,
+      price: t.pricing.professional.price,
+      period: t.pricing.professional.period,
+      popular: true,
+      badge: t.pricing.professional.badge,
+      features: t.pricing.professional.features,
+      button: t.pricing.professional.button,
+    },
+    {
+      name: t.pricing.growth.name,
+      price: t.pricing.growth.price,
+      period: t.pricing.growth.period,
+      popular: false,
+      features: t.pricing.growth.features,
+      button: t.pricing.growth.button,
+    },
+  ];
+
   return (
     <section className="bg-slate-50 px-6 pb-24 lg:px-16">
       <div className="mx-auto grid max-w-[1200px] gap-8 lg:grid-cols-3">
         {plans.map((plan) => (
           <div
             key={plan.name}
-            className={`relative flex flex-col rounded-3xl p-8 shadow-lg ${
+            className={`relative flex flex-col rounded-3xl p-8 shadow-lg transition-all duration-300 ${
               plan.popular
                 ? "scale-105 bg-slate-900 text-white"
                 : "bg-white text-slate-900"
             }`}
           >
-            {/* Popular badge */}
+            {/* Most Popular Badge */}
             {plan.popular && (
               <div className="absolute right-6 top-6 rounded-full bg-gradient-to-r from-blue-500 to-emerald-400 px-4 py-1 text-xs font-semibold uppercase text-white">
-                Popular
+                {plan.badge}
               </div>
             )}
 
-            {/* Title */}
+            {/* Package Name */}
             <h2 className="text-center text-3xl font-bold">{plan.name}</h2>
 
-            <p className="mt-8 text-center text-xs uppercase tracking-[0.3em] text-slate-400">
-              Starts At
-            </p>
-
             {/* Price */}
-            <div className="mt-3 text-center">
-              <span className="align-top text-base">$</span>
-
-              <span className="text-5xl font-bold">{plan.price}</span>
-
-              <span
-                className={`ml-2 ${
-                  plan.popular ? "text-slate-300" : "text-slate-500"
+            <div className="mt-8 text-center">
+              <p
+                className={`text-sm uppercase tracking-[0.3em] ${
+                  plan.popular ? "text-slate-300" : "text-slate-400"
                 }`}
               >
-                / month
-              </span>
+                {plan.period}
+              </p>
+
+              <p className="mt-2 text-5xl font-bold">{plan.price}</p>
             </div>
 
+            {/* Divider */}
             <div
               className={`my-8 h-px ${
                 plan.popular ? "bg-slate-700" : "bg-slate-200"
@@ -98,7 +91,7 @@ export const PricingSection = () => {
               ))}
             </ul>
 
-            {/* Button */}
+            {/* CTA */}
             <button
               className={`mt-10 rounded-xl py-4 text-sm font-semibold uppercase transition ${
                 plan.popular
@@ -106,7 +99,7 @@ export const PricingSection = () => {
                   : "border border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white"
               }`}
             >
-              Contact Us
+              {plan.button}
             </button>
           </div>
         ))}

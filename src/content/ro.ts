@@ -157,7 +157,7 @@ export const ro: WebsiteContent = {
 
     professional: {
       badge: "Cel Mai Popular",
-      name: "Professional",
+      name: "Profesional",
       price: "700 €",
       period: "plată unică",
       features: [
@@ -171,7 +171,7 @@ export const ro: WebsiteContent = {
     },
 
     growth: {
-      name: "Growth",
+      name: "Crestere",
       price: "1000 €+",
       period: "plată unică",
       features: [
