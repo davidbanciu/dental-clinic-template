@@ -24,7 +24,7 @@ export const Hero = () => {
       <Header />
 
       {/* Hero content */}
-      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1040px] items-center px-6 lg:px-0">
+      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1200px] items-center px-6 lg:px-0">
         <div className="max-w-[520px] pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
             {t.home.hero.badge}
