@@ -1,6 +1,6 @@
 import { MapPin, Phone } from "lucide-react";
 
-import { SocialIcons } from "../../../../shared-components";
+import { LanguageSwitcher, SocialIcons } from "../../../../shared-components";
 import { useLanguage } from "../../../../hooks";
 
 export const MediaAddress = () => {
@@ -21,6 +21,8 @@ export const MediaAddress = () => {
           <span className="ml-2">{t.home.hero.phone}</span>
         </div>
       </div>
+
+      <LanguageSwitcher />
 
       <SocialIcons />
     </div>

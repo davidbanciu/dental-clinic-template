@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 import { MobileMenu } from "./mobile-menu";
-import { LanguageSwitcher } from "./language-switcher";
 import { useLanguage } from "../hooks";
 
 type Props = {
@@ -66,9 +65,6 @@ export const Navbar = ({ dark = false }: Props) => {
           >
             {t.navbar.contact}
           </Link>
-
-          {/* Language Switcher */}
-          <LanguageSwitcher dark={dark} />
         </div>
       </nav>
 
@@ -82,9 +78,6 @@ export const Navbar = ({ dark = false }: Props) => {
         </Link>
 
         <div className="flex items-center gap-3">
-          {/* Language Switcher */}
-          <LanguageSwitcher dark={dark} />
-
           {/* Hamburger */}
           <button
             type="button"
