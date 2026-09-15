@@ -4,41 +4,47 @@ import cosmetic from "../../../images/work1.jpg";
 import implants from "../../../images/work2.jpg";
 import whitening from "../../../images/work3.jpg";
 
-const services = [
-  {
-    title: "Cosmetic Dentistry",
-    description:
-      "Transform your smile with veneers, bonding, and aesthetic treatments designed to improve the appearance of your teeth while maintaining a natural look.",
-    image: cosmetic,
-  },
-  {
-    title: "Dental Implants",
-    description:
-      "Restore missing teeth with durable, natural-looking dental implants that improve both function and confidence with long-lasting results.",
-    image: implants,
-  },
-  {
-    title: "Professional Teeth Whitening",
-    description:
-      "Brighten your smile safely with professional whitening treatments that deliver faster, longer-lasting results than over-the-counter products.",
-    image: whitening,
-  },
-];
+import { useLanguage } from "../../../hooks";
 
 export const ServicesSection = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      title: t.services.service1.title,
+      description: t.services.service1.description,
+      button: t.services.service1.button,
+      image: cosmetic,
+    },
+    {
+      title: t.services.service2.title,
+      description: t.services.service2.description,
+      button: t.services.service2.button,
+      image: implants,
+    },
+    {
+      title: t.services.service3.title,
+      description: t.services.service3.description,
+      button: t.services.service3.button,
+      image: whitening,
+    },
+  ];
+
   return (
     <section className="bg-white px-6 py-24 lg:px-16">
       <div className="mx-auto max-w-[1200px]">
+        {/* Section Heading */}
         <div className="mb-24 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-500">
-            Select Services
+            {t.services.sectionBadge}
           </p>
 
           <h2 className="mt-5 text-4xl font-extrabold text-slate-900">
-            Treatments We Offer
+            {t.services.sectionTitle}
           </h2>
         </div>
 
+        {/* Services */}
         <div className="space-y-28">
           {services.map((service, index) => (
             <div
@@ -58,7 +64,8 @@ export const ServicesSection = () => {
                 </p>
 
                 <button className="mt-8 inline-flex items-center gap-2 rounded-xl bg-slate-900 px-7 py-4 text-sm font-semibold uppercase tracking-wide text-white transition hover:bg-slate-800">
-                  Learn More
+                  {service.button}
+
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </div>

@@ -92,6 +92,9 @@ export type WebsiteContent = {
       subtitle: string;
     };
 
+    sectionBadge: string;
+    sectionTitle: string;
+
     service1: {
       title: string;
       description: string;

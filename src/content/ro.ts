@@ -111,6 +111,9 @@ export const ro: WebsiteContent = {
         "O prezentare clară și modernă a celor mai importante tratamente oferite de cabinet.",
     },
 
+    sectionBadge: "Tratamentele Noastre",
+    sectionTitle: "Serviciile Oferite",
+
     service1: {
       title: "Implanturi Dentare",
       description:

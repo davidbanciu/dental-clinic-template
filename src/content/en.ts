@@ -111,6 +111,9 @@ export const en: WebsiteContent = {
         "A clean, informative presentation of the clinic's most popular treatments.",
     },
 
+    sectionBadge: "Our Treatments",
+    sectionTitle: "Treatments We Offer",
+
     service1: {
       title: "Dental Implants",
       description:
