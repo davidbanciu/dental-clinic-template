@@ -7,7 +7,7 @@ export const en: WebsiteContent = {
   },
 
   navbar: {
-    logo: "Dentist Marketing",
+    logo: "Dentist Clinic",
     about: "About Us",
     services: "Services",
     pricing: "Pricing",

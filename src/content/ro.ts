@@ -7,7 +7,7 @@ export const ro: WebsiteContent = {
   },
 
   navbar: {
-    logo: "Dentist Marketing",
+    logo: "Clinica Dentist",
     about: "Despre Noi",
     services: "Servicii",
     pricing: "Prețuri",
