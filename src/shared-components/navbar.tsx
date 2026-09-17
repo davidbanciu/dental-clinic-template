@@ -18,11 +18,11 @@ export const Navbar = ({ dark = false }: Props) => {
     setIsOpen((prev) => !prev);
   };
 
-  const textColor = dark ? "text-slate-900" : "text-white";
+  const textColor = dark ? "text-slate-900" : "!text-white";
 
-  const buttonBorder = dark
-    ? "border-slate-300 hover:bg-slate-900 hover:text-white"
-    : "border-white hover:bg-white hover:text-black";
+  const contactButton = dark
+    ? "border border-slate-300 text-slate-900 hover:bg-slate-900 hover:text-white"
+    : "border border-white text-white hover:bg-white hover:text-slate-900";
 
   return (
     <>
@@ -61,7 +61,7 @@ export const Navbar = ({ dark = false }: Props) => {
 
           <Link
             to="/contact"
-            className={`rounded border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${textColor} ${buttonBorder}`}
+            className={`rounded border px-5 py-2.5 text-sm font-medium transition-all duration-300 ${textColor} ${contactButton}`}
           >
             {t.navbar.contact}
           </Link>

@@ -4,7 +4,7 @@ import { useLanguage } from "../hooks";
 export const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
 
-  const active = "shadow-md border";
+  const active = "shadow-md border text-white";
 
   return (
     <div className="flex items-center p-0.5">
@@ -12,7 +12,7 @@ export const LanguageSwitcher = () => {
         type="button"
         onClick={() => setLanguage("ro")}
         aria-label="Romanian"
-        className={`rounded-full px-2 py-1 focus:outline-none transition-all ${
+        className={`rounded-full cursor-pointer px-2 py-1 focus:outline-none transition-all ${
           language === "ro" ? active : ""
         }`}
       >
@@ -27,7 +27,7 @@ export const LanguageSwitcher = () => {
         type="button"
         onClick={() => setLanguage("en")}
         aria-label="English"
-        className={`rounded-full px-2 py-1 focus:outline-none transition-all ${
+        className={`rounded-full cursor-pointer px-2 py-1 focus:outline-none transition-all ${
           language === "en" ? active : ""
         }`}
       >

@@ -40,7 +40,7 @@ export const Hero = () => {
 
           <Link
             to="/contact"
-            className="mt-8 inline-flex rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-wide text-white transition-colors hover:bg-blue-700"
+            className="mt-8 inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-wide !text-white transition-colors hover:bg-blue-700"
           >
             {t.home.hero.button}
           </Link>

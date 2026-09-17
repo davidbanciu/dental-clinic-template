@@ -45,14 +45,17 @@ export const OurApproach = () => {
     >
       <div className="mx-auto max-w-[1200px]">
         {/* Heading */}
-        <div className="text-center">
+        <div className="flex flex-col items-center text-center">
           <h2 className="text-4xl font-extrabold text-slate-900 md:text-5xl">
             {t.home.ourApproach.title}
           </h2>
 
-          <p className="mx-auto mt-5 max-w-xl text-lg text-slate-500">
-            {t.home.ourApproach.description}
-          </p>
+          <div className="mt-5">
+            <p className="max-w-2xl text-center text-lg leading-8 text-slate-500">
+              {t.home.ourApproach.description}
+            </p>
+          </div>
+
         </div>
 
         {/* Cards */}

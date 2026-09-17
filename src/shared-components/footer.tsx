@@ -34,7 +34,7 @@ export const Footer = () => {
 
             <Link
               to="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold text-blue-600 transition hover:bg-slate-100"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-8 py-4 font-semibold !text-blue-600 transition hover:bg-slate-100"
             >
               {t.footer.ctaButton}
               <ArrowRight className="h-5 w-5" />
