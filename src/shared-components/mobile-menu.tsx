@@ -21,7 +21,7 @@ export const MobileMenu = ({ isOpen }: Props) => {
 
         <Link
           to="/contact"
-          className="rounded-lg bg-sky-500 py-3 text-center font-medium text-white"
+          className="rounded-lg bg-[var(--primary)] py-3 text-center font-medium text-white transition hover:opacity-90"
         >
           {t.navbar.contact}
         </Link>

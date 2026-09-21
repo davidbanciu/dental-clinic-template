@@ -9,14 +9,17 @@ import { useLanguage } from "../hooks";
 export const SocialIcons = () => {
   const { t } = useLanguage();
 
+  const iconClass =
+    "transition duration-300 hover:text-[var(--secondary)]";
+
   return (
-    <div className="flex items-center gap-7 text-white">
+    <div className="flex items-center gap-7 text-current">
       <a
         href={t.social.facebook}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Facebook"
-        className="transition-opacity hover:opacity-70"
+        className={iconClass}
       >
         <FaFacebookF className="h-3.5 w-3.5" />
       </a>
@@ -26,7 +29,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="X"
-        className="transition-opacity hover:opacity-70"
+        className={iconClass}
       >
         <FaXTwitter className="h-3.5 w-3.5" />
       </a>
@@ -36,7 +39,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
-        className="transition-opacity hover:opacity-70"
+        className={iconClass}
       >
         <FaInstagram className="h-3.5 w-3.5" />
       </a>
@@ -46,7 +49,7 @@ export const SocialIcons = () => {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="YouTube"
-        className="transition-opacity hover:opacity-70"
+        className={iconClass}
       >
         <FaYoutube className="h-3.5 w-3.5" />
       </a>

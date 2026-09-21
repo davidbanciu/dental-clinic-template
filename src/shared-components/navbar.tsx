@@ -18,11 +18,11 @@ export const Navbar = ({ dark = false }: Props) => {
     setIsOpen((prev) => !prev);
   };
 
-  const textColor = dark ? "text-slate-900" : "!text-white";
+  const textColor = dark ? "text-slate-900" : "text-white";
 
   const contactButton = dark
-    ? "border border-slate-300 text-slate-900 hover:bg-slate-900 hover:text-white"
-    : "border border-white text-white hover:bg-white hover:text-slate-900";
+    ? "border border-slate-300 text-slate-900 hover:bg-[var(--primary)] hover:border-[var(--primary)] hover:text-white"
+    : "border border-white text-white hover:bg-white hover:text-[var(--primary)]";
 
   return (
     <>
