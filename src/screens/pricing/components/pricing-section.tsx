@@ -46,7 +46,7 @@ export const PricingSection = () => {
           >
             {/* Most Popular Badge */}
             {plan.popular && (
-              <div className="absolute right-6 top-6 rounded-full bg-gradient-to-r from-blue-500 to-emerald-400 px-4 py-1 text-xs font-semibold uppercase text-white">
+              <div className="absolute right-6 top-6 rounded-full bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] px-4 py-1 text-xs font-semibold uppercase text-white">
                 {plan.badge}
               </div>
             )}
@@ -78,7 +78,7 @@ export const PricingSection = () => {
             <ul className="space-y-5">
               {plan.features.map((feature) => (
                 <li key={feature} className="flex items-center gap-3">
-                  <Check className="h-5 w-5 text-emerald-400" />
+                  <Check className="h-5 w-5 text-[var(--accent)]" />
 
                   <span
                     className={
@@ -95,8 +95,8 @@ export const PricingSection = () => {
             <button
               className={`mt-10 rounded-xl py-4 text-sm font-semibold uppercase transition ${
                 plan.popular
-                  ? "bg-gradient-to-r from-blue-500 to-emerald-400 text-white hover:opacity-90"
-                  : "border border-emerald-500 text-emerald-500 hover:bg-emerald-500 hover:text-white"
+                  ? "bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white hover:opacity-90"
+                  : "border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white"
               }`}
             >
               {plan.button}

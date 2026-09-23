@@ -15,7 +15,7 @@ export const PricingHero = () => {
 
       {/* Hero */}
       <div className="mx-auto max-w-[900px] px-6 py-20 text-center lg:px-16">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-500">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
           {t.pricing.hero.badge}
         </p>
 

@@ -27,7 +27,7 @@ export const FeaturedArticle = () => {
 
             <Link
               to="/contact"
-              className="mt-10 inline-flex items-center gap-2 text-lg font-medium text-slate-700 transition-colors hover:text-blue-600"
+              className="mt-10 inline-flex items-center gap-2 text-lg font-medium text-slate-700 transition-colors hover:text-[var(--primary)]"
             >
               {t.home.featuredArticle.readMore}
               <span>→</span>

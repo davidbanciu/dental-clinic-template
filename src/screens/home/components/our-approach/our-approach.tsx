@@ -69,8 +69,8 @@ export const OurApproach = () => {
                 className="group rounded-2xl bg-white p-8 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
               >
                 {/* Icon */}
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 transition-colors group-hover:bg-emerald-500">
-                  <Icon className="h-8 w-8 text-emerald-600 group-hover:text-white" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent-light)] transition-colors group-hover:bg-[var(--accent)]">
+                  <Icon className="h-8 w-8 text-[var(--accent)] group-hover:text-white" />
                 </div>
 
                 {/* Title */}
@@ -86,7 +86,7 @@ export const OurApproach = () => {
                 {/* Link */}
                 <a
                   href="#contact"
-                  className="mt-8 inline-flex items-center font-medium text-blue-600 transition-colors hover:text-blue-700"
+                  className="mt-8 inline-flex items-center font-medium text-[var(--primary)] transition-colors hover:text-[var(--primary)]"
                 >
                   {t.home.ourApproach.readMore} →
                 </a>

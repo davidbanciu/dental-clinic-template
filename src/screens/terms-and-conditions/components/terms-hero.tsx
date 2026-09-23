@@ -17,11 +17,11 @@ export const TermsHero = () => {
 
       {/* Hero */}
       <div className="mx-auto flex max-w-[900px] flex-col items-center px-6 py-20 text-center">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-          <FileText className="h-8 w-8 text-blue-600" />
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--primary-light)]">
+          <FileText className="h-8 w-8 text-[var(--primary)]" />
         </div>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-[var(--primary)]">
           {t.terms.hero.badge}
         </p>
 

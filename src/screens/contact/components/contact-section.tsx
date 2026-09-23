@@ -41,7 +41,7 @@ export const ContactSection = () => {
               {/* Phone */}
               <div className="flex items-start gap-5">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white">
-                  <Phone className="h-6 w-6 text-emerald-500" />
+                  <Phone className="h-6 w-6 text-[var(--accent)]" />
                 </div>
 
                 <div>
@@ -58,7 +58,7 @@ export const ContactSection = () => {
               {/* Email */}
               <div className="flex items-start gap-5">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white">
-                  <Mail className="h-6 w-6 text-emerald-500" />
+                  <Mail className="h-6 w-6 text-[var(--accent)]" />
                 </div>
 
                 <div>
@@ -75,7 +75,7 @@ export const ContactSection = () => {
               {/* Address */}
               <div className="flex items-start gap-5">
                 <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white">
-                  <MapPin className="h-6 w-6 text-emerald-500" />
+                  <MapPin className="h-6 w-6 text-[var(--accent)]" />
                 </div>
 
                 <div>
@@ -116,7 +116,7 @@ export const ContactSection = () => {
               <input
                 type="text"
                 placeholder={t.contact.form.namePlaceholder}
-                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
+                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-[var(--primary)]-500"
               />
             </div>
 
@@ -129,7 +129,7 @@ export const ContactSection = () => {
               <input
                 type="email"
                 placeholder={t.contact.form.emailPlaceholder}
-                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
+                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-[var(--primary)]-500"
               />
             </div>
 
@@ -142,7 +142,7 @@ export const ContactSection = () => {
               <input
                 type="text"
                 placeholder={t.contact.form.subjectPlaceholder}
-                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-blue-500"
+                className="w-full border-b border-slate-300 bg-transparent py-3 outline-none transition focus:border-[var(--primary)]-500"
               />
             </div>
 
@@ -155,13 +155,13 @@ export const ContactSection = () => {
               <textarea
                 rows={6}
                 placeholder={t.contact.form.messagePlaceholder}
-                className="w-full rounded-xl border border-slate-300 p-4 outline-none transition focus:border-blue-500"
+                className="w-full rounded-xl border border-slate-300 p-4 outline-none transition focus:border-[var(--primary)]-500"
               />
             </div>
 
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-400 px-6 py-4 text-lg font-semibold text-white transition hover:opacity-90 md:w-auto"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] px-6 py-4 text-lg font-semibold text-white transition hover:opacity-90 md:w-auto"
             >
               <Send className="h-5 w-5" />
 

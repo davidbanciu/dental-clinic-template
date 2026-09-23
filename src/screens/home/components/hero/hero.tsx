@@ -18,7 +18,13 @@ export const Hero = () => {
       />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 z-10 bg-linear-to-r from-blue-600/80 via-cyan-500/70 to-emerald-400/80" />
+      <div
+        className="absolute inset-0 z-10"
+        style={{
+          background:
+            "linear-gradient(to right, color-mix(in srgb, var(--primary) 80%, transparent), color-mix(in srgb, var(--secondary) 70%, transparent), color-mix(in srgb, var(--accent) 75%, transparent))",
+        }}
+      />
 
       {/* Header */}
       <Header />
@@ -26,7 +32,7 @@ export const Hero = () => {
       {/* Hero content */}
       <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1200px] items-center px-6 lg:px-0">
         <div className="max-w-[520px] pt-20">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--primary-light)]">
             {t.home.hero.badge}
           </p>
 
@@ -40,7 +46,7 @@ export const Hero = () => {
 
           <Link
             to="/contact"
-            className="mt-8 inline-flex items-center justify-center rounded-xl bg-blue-600 px-8 py-4 text-sm font-semibold uppercase tracking-wide !text-white transition-colors hover:bg-blue-700"
+            className="mt-8 inline-flex items-center justify-center rounded-xl bg-[var(--primary)] px-8 py-4 text-sm font-semibold uppercase tracking-wide !text-white transition-colors hover:bg-[var(--primary)]"
           >
             {t.home.hero.button}
           </Link>

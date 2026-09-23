@@ -9,7 +9,7 @@ export const OurStory = () => {
       <div className="mx-auto max-w-[900px]">
         {/* Heading */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-600">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--secondary)]-600">
             {t.about.hero.badge}
           </p>
 

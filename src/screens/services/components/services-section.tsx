@@ -35,7 +35,7 @@ export const ServicesSection = () => {
       <div className="mx-auto max-w-[1200px]">
         {/* Section Heading */}
         <div className="mb-24 text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-500">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
             {t.services.sectionBadge}
           </p>
 

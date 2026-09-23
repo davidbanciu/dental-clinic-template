@@ -17,11 +17,11 @@ export const PrivacyPolicyHero = () => {
 
       {/* Hero */}
       <div className="mx-auto flex max-w-[900px] flex-col items-center px-6 py-20 text-center">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
-          <ShieldCheck className="h-8 w-8 text-emerald-600" />
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[var(--accent-light)]">
+          <ShieldCheck className="h-8 w-8 text-[var(--accent)]" />
         </div>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-emerald-600">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
           {t.privacyPolicy.hero.badge}
         </p>
 

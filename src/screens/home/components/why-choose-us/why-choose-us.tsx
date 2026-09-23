@@ -51,8 +51,8 @@ export const WhyChooseUs = () => {
                   key={item.title}
                   className="flex items-start gap-6"
                 >
-                  <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-blue-100">
-                    <Icon className="h-8 w-8 text-blue-600" />
+                  <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-[var(--primary-light)]">
+                    <Icon className="h-8 w-8 text-[var(--primary)]" />
                   </div>
 
                   <div>

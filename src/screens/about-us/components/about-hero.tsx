@@ -5,7 +5,7 @@ export const AboutHero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-r from-blue-600 via-sky-500 to-emerald-400">
+    <section className="relative overflow-hidden bg-linear-to-r from-[var(--primary)] via-[var(--secondary)] to-[var(--accent)]">
       {/* Navbar */}
       <div className="mx-auto max-w-[1200px] px-6 lg:px-16">
         <Navbar />
@@ -13,7 +13,7 @@ export const AboutHero = () => {
 
       {/* Hero Content */}
       <div className="mx-auto max-w-[1200px] px-6 pb-36 pt-20 lg:px-16 lg:pt-28">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-100">
+        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--primary-light)]">
           {t.about.hero.badge}
         </p>
 
@@ -21,7 +21,7 @@ export const AboutHero = () => {
           {t.about.hero.title}
         </h1>
 
-        <p className="mt-8 max-w-xl text-lg leading-8 text-blue-50">
+        <p className="mt-8 max-w-xl text-lg leading-8 text-[var(--primary-light)]">
           {t.about.hero.subtitle}
         </p>
       </div>
