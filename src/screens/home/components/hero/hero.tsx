@@ -9,7 +9,7 @@ export const Hero = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[795px] overflow-hidden rounded-br-[320px]">
+    <section className="relative min-h-[795px] overflow-hidden rounded-br-[320px] px-6 md:px-10 lg:px-16 xl:px-32">
       {/* Background image */}
       <img
         src={agencyHero}
@@ -30,7 +30,7 @@ export const Hero = () => {
       <Header />
 
       {/* Hero content */}
-      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1200px] items-center px-6 lg:px-0">
+      <div className="relative z-20 mx-auto flex min-h-[795px] max-w-[1200px] items-center">
         <div className="max-w-[520px] pt-20">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--primary-light)]">
             {t.home.hero.badge}
