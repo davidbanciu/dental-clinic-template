@@ -23,7 +23,7 @@ export const en: WebsiteContent = {
         "We specialize in marketing that helps dental clinics attract more patients and grow their business.",
       button: "Learn More",
       address: "3 Abbey Rd, London, United Kingdom",
-      phone: "(+27) 81 343 4552",
+      phone: "(+27) 71 343 4552",
     },
 
     whyChooseUs: {
