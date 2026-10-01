@@ -23,7 +23,7 @@ export const ro: WebsiteContent = {
         "Suntem specializați în marketing pentru cabinete stomatologice și te ajutăm să atragi mai mulți pacienți și să îți dezvolți afacerea.",
       button: "Află Mai Multe",
       address: "Strada Exemplu 10, București, România",
-      phone: "(+40) 731 234 567",
+      phone: "(+40) 321 234 567",
     },
 
     whyChooseUs: {
